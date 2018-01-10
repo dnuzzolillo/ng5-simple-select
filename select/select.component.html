@@ -1,0 +1,28 @@
+<label #selector class="select-area form-control" (keydown)="key($event)">
+    <div *ngIf="selected_items.length > 0" class="item-box">
+        <span class="item"  *ngFor="let item of selected_items ;let i = index; trackBy index">{{item.text}} <i class="fa fa-times" (click)="delete(item, i)"></i></span>
+    </div>
+    <div class="auto-complete">
+        <input 
+        type="text" 
+        name="filter" 
+        [(ngModel)]="filter"  
+        class="" 
+        id="test" 
+        [placeholder]="place_holder()"
+        #input
+        (focus)="display_list = true" 
+        (focusout)="close()">
+        <div class="list" [hidden]="!display_list" >
+          <ul #list (mouseover)="list_hovered = true" (mouseleave)="list_hovered = false">
+            <li 
+            [ngClass]="{'hover': ishover(i)}" 
+            *ngFor="let option of options_array();let i = index;let last = last ; trackBy index;" 
+            (click)="select(option, i)"
+            (mouseover)="hover = i">
+              <span class="name">{{option.text}}</span>
+            </li>
+          </ul>
+        </div>
+    </div>
+</label>

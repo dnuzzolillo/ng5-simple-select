@@ -1,0 +1,99 @@
+.select-area{
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 34px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .select-area .auto-complete{
+    display: inline-block;
+    width: 100%;
+    font-weight: lighter;
+  
+  }
+  .select-area input{
+    border: none !important;
+    background: transparent !important;
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+  .select-area input:focus{
+    width: auto;
+    position: relative;
+    border: none !important;
+    box-shadow: 0 !important;
+    outline-color: transparent;
+  }
+  .select-area .list ul{
+    list-style: none;
+    padding: 0px; 
+    max-height: 300px;
+    overflow: auto;
+    margin:0;
+  }
+  .select-area .list li{
+    list-style: none;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+  }
+  .select-area .list li:hover, 
+  .select-area .list:not(:hover) li.hover{
+    background: #4c87c2;
+    color: white;
+  }
+  .item-box{
+      padding: 6px 12px;
+      display: table;
+  }
+  .item-box i{
+      margin-left: 5px;
+      cursor: pointer;
+  }
+  
+  .select-area .list{
+    position: absolute;
+    width: 100%;
+    max-height: 400px;
+    background: #fff;
+    z-index: 99999;
+    border: solid 1px #dedede;
+  }
+  .auto-complete{
+      position: relative;
+      width: 100%;
+  }
+  /* .select-area .list:hover{
+    display: block !important;
+  } */
+
+  
+  .select-area .item{
+    background: #4c87c2;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-left: 7px;
+    padding-right: 5px;
+    color: white;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
