@@ -5,4 +5,4 @@ Angular 5 simple select multiple compoonent
  Just import on app.module.ts
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  How to use:
- <app-select [options]="options_array" (onSelect)="onSelectFunction($event)></app-select>"
+ <app-select [options]="options_array" (onSelect)="onSelectFunction($event)" (onDelete)="onDeleteFunction($event)"></app-select>
