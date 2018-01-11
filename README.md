@@ -1,5 +1,5 @@
 # ng5-simple-select
-Angular 5 simple select multiple compoonent
+Angular 5 simple select multiple component
 
  Instalation:
  Just import on app.module.ts
